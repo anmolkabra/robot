@@ -12,7 +12,7 @@ speed = 60
 
 try:
   while True:
-    if (int(input("Enter 1 to go: ")):
+    if (int(input("Enter 1 to go: ")) == 1):
       # Defining the sensors on the bottom of the Pi2Go
       left = pi2go.irLeftLine()
       right = pi2go.irRightLine()

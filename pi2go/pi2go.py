@@ -112,8 +112,8 @@ R2 = 21
 irFL = 7
 irFR = 11
 irMID = 15  # this sensor not available on Lite version
-lineRight = 13
-lineLeft = 12
+lineRight = 22
+lineLeft = 23
 
 # Define Colour IDs for the RGB LEDs (Pi2Go full only)
 Blue = 0
