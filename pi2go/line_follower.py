@@ -12,18 +12,23 @@ speed = 60
 
 try:
   while True:
-    # Defining the sensors on the bottom of the Pi2Go
-    left = pi2go.irLeftLine()
-    right = pi2go.irRightLine()
-    if left == right: # If both sensors are the same (either on or off):
-      # Forward
-      pi2go.forward(speed)
-    elif left == True: # If the left sensor is on
-      # Left
-      pi2go.spinRight(speed)
-    elif right == True: #If the right sensor is on
-      # Right
-      pi2go.spinLeft(speed)
+    if (int(input("Enter 1 to go: ")):
+      # Defining the sensors on the bottom of the Pi2Go
+      left = pi2go.irLeftLine()
+      right = pi2go.irRightLine()
+      print "left: " + str(left)
+      print "right: " + str(right)
+    # if left == right: # If both sensors are the same (either on or off):
+    #   # Forward
+    #   pi2go.forward(speed)
+    # elif left == True: # If the left sensor is on
+    #   # Left
+    #   pi2go.spinRight(speed)
+    # elif right == True: #If the right sensor is on
+    #   # Right
+    #   pi2go.spinLeft(speed)
+    else:
+      break
 
 finally: # Even if there was an error, cleanup
   pi2go.cleanup()
